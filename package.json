@@ -5,6 +5,7 @@
     "mongoose": "^9.6.2",
     "nodemon": "^3.1.14"
   },
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   }

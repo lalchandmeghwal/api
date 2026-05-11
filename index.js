@@ -19,7 +19,7 @@ app.use('/web/api', studnetRouters)
 
 mongoose.connect(process.env.DBURL).then(() => {
     console.log('connected to mongodb');
-    const port = process.env.PORT;
+    const port = process.env.PORT || 1000;
     app.listen(port, () => {
         console.log(`Server is runing on //http://localhost:${port}`)
     });
